@@ -2,11 +2,13 @@
   {
     "icon": "/assets/images/product-formulir.png",
     "title": "Formulir",
-    "subtitle": "Formulir.id adalah Software as a Service (SaaS) berbasis cloud untuk membuat formulir online. Cocok digunakan untuk pendaftaran, penjualan kelas online dan produk lainnya."
+    "subtitle": "Buat formulir pendaftaran dan penjualan dengan mudah. Terintegrasi dengan berbagai metode pembayaran dan dapat dikostumasi.",
+    "link": "https://formulir.id/"
   },
   {
     "icon": "/assets/images/product-kelasna.png",
     "title": "Kelasna",
-    "subtitle": "Formulir.id adalah Software as a Service (SaaS) berbasis cloud untuk membuat formulir online. Cocok digunakan untuk pendaftaran, penjualan kelas online dan produk lainnya."
+    "subtitle": "Bangun e-learning platform untuk organisasi Anda dengan mudah. Dapat secara flexible diintegrasikan dengan berbagai sistem.",
+    "link": "https://www.kelasna.id/"
   }
 ]

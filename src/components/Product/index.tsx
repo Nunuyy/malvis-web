@@ -29,7 +29,13 @@ export const Product: React.FC = () => {
               <ContentProductWrapper>
                 {dataProduct.map((data: any, i: number) => (
                   <Fragment key={i}>
-                    <ProductCard key={i} image={data?.icon} title={data?.title} subtitle={data?.subtitle} />
+                    <ProductCard
+                      key={i}
+                      image={data?.icon}
+                      title={data?.title}
+                      subtitle={data?.subtitle}
+                      link={data?.link}
+                    />
                   </Fragment>
                 ))}
               </ContentProductWrapper>

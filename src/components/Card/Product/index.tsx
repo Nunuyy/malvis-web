@@ -17,19 +17,20 @@ interface ProductProps {
   image: string
   title: string
   subtitle: string
+  link: string
 }
 
-const Product: FC<ProductProps> = ({ image, title, subtitle }) => (
+const Product: FC<ProductProps> = ({ image, title, subtitle, link }) => (
   <>
     <ContentProduct>
       <Image unoptimized={true} src={image} layout="fixed" width={149} height={149} objectFit="contain" />
       <Title>{title}</Title>
       <SubTitle>{subtitle}</SubTitle>
       <Button
-        text="Try For Free"
+        text="Learn More"
         tw="border-[1px] border-gray-300 bg-white shadow-sm rounded-full px-7 py-2 text-primary font-medium text-base"
         external={true}
-        url="#" //belum diisi
+        url={link}
       />
     </ContentProduct>
   </>
