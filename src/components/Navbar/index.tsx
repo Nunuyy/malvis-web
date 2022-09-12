@@ -52,10 +52,14 @@ export const Navbar: React.FC = () => {
                 {dropdown && (
                   <ul tw="absolute w-[181px] mt-4 bg-white border-b border-white rounded-md shadow-md">
                     <li>
-                      <A href="https://sawala.or.id/">YAYASAN</A>
+                      <A href="https://sawala.or.id/" target="_blank">
+                        FOUNDATION
+                      </A>
                     </li>
                     <li>
-                      <A href="https://sawala.or.id/">ORGANISASI</A>
+                      <A href="https://sawala.space/" target="_blank">
+                        SPACE
+                      </A>
                     </li>
                   </ul>
                 )}
