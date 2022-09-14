@@ -5,13 +5,14 @@ import { Container } from '@/components/Layouts'
 import { DefaultModal } from '@/components/Modal/Default'
 
 const A = styled.a`
-  ${tw`flex px-4 my-3 text-base font-normal tracking-wider text-[#011154]`}
+  ${tw`flex px-5 my-3 text-base font-normal tracking-wider text-[#011154]`}
 `
 
 export const Navbar: React.FC = () => {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [dropdown, setDropdown] = useState(false)
+
   const handleScroll = () => {
     const offset = window.scrollY
 
@@ -44,25 +45,39 @@ export const Navbar: React.FC = () => {
                   <a
                     tw="text-[#011154] text-base font-body cursor-pointer px-2 flex items-center border-l-[0.5px] border-black order-1"
                     onClick={() => setDropdown(!dropdown)}>
-                    <div tw="relative w-[166px] h-auto flex justify-start p-3">
-                      <Image unoptimized={true} src={'/assets/images/tech-nav.svg'} layout={'fill'} />
+                    <div tw="relative w-[138px] h-auto flex justify-start p-3">
+                      <Image unoptimized={true} src={'/assets/images/tech.svg'} layout={'fill'} />
+                    </div>
+                    <div tw="relative w-[11px] h-auto flex p-1 px-4">
+                      <Image
+                        unoptimized={true}
+                        src={dropdown ? '/assets/images/chevron-rotate.svg' : '/assets/images/chevron.svg'}
+                        layout={'fill'}
+                      />
                     </div>
                   </a>
                 </div>
-                {dropdown && (
-                  <ul tw="absolute w-[181px] mt-4 bg-white border-b border-white rounded-md shadow-md">
-                    <li>
-                      <A href="https://sawala.or.id/" target="_blank">
-                        FOUNDATION
-                      </A>
-                    </li>
-                    <li>
-                      <A href="https://sawala.space/" target="_blank">
-                        SPACE
-                      </A>
-                    </li>
-                  </ul>
-                )}
+                <div
+                  className={`${
+                    dropdown
+                      ? 'absolute mt-4 bg-white border-b border-white rounded-md shadow-md transition-all duration-200'
+                      : ''
+                  }`}>
+                  {dropdown && (
+                    <ul tw=" w-[181px]">
+                      <li>
+                        <A href="https://sawala.or.id/" target="_blank">
+                          FOUNDATION
+                        </A>
+                      </li>
+                      <li>
+                        <A href="https://sawala.space/" target="_blank">
+                          SPACE
+                        </A>
+                      </li>
+                    </ul>
+                  )}
+                </div>
               </li>
             </ul>
           </div>
