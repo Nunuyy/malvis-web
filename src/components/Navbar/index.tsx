@@ -1,11 +1,18 @@
+import Image from 'next/image'
+import tw, { styled } from 'twin.macro'
+import { useEffect, useState } from 'react'
 import { Container } from '@/components/Layouts'
 import { DefaultModal } from '@/components/Modal/Default'
-import { useEffect, useState } from 'react'
-import 'twin.macro'
-import Image from 'next/image'
+
+const A = styled.a`
+  ${tw`flex px-5 my-3 text-base font-normal tracking-wider text-[#011154]`}
+`
+
 export const Navbar: React.FC = () => {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [dropdown, setDropdown] = useState(false)
+
   const handleScroll = () => {
     const offset = window.scrollY
 
@@ -28,8 +35,51 @@ export const Navbar: React.FC = () => {
             : 'transition-all duration-500 py-5 lg:py-10'
         }`}>
         <Container tag="nav" tw="flex items-center justify-between">
-          <div tw="relative w-[120px] h-auto flex justify-start p-5">
-            <Image unoptimized={true} src={'/assets/images/logo-sawala-tech.svg'} layout={'fill'} />
+          <div tw="relative w-[155px] h-auto flex justify-start p-5">
+            <Image unoptimized={true} src={'/assets/images/logo-sawala-tech(new).svg'} layout={'fill'} />
+          </div>
+          <div tw="w-11/12">
+            <ul tw="relative w-auto h-auto flex items-center p-2 ">
+              <li tw="relative">
+                <div tw="flex justify-center items-center">
+                  <a
+                    tw="text-[#011154] text-base font-body cursor-pointer px-2 flex items-center border-l-[0.5px] border-black order-1"
+                    onClick={() => setDropdown(!dropdown)}>
+                    <div tw="relative w-[138px] h-auto flex justify-start p-3">
+                      <Image unoptimized={true} src={'/assets/images/tech.svg'} layout={'fill'} />
+                    </div>
+                    <div tw="relative w-[11px] h-auto flex p-1 px-4">
+                      <Image
+                        unoptimized={true}
+                        src={dropdown ? '/assets/images/chevron-rotate.svg' : '/assets/images/chevron.svg'}
+                        layout={'fill'}
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div
+                  className={`${
+                    dropdown
+                      ? 'absolute mt-4 bg-white border-b border-white rounded-md shadow-md transition-all duration-200'
+                      : ''
+                  }`}>
+                  {dropdown && (
+                    <ul tw=" w-[181px]">
+                      <li>
+                        <A href="https://sawala.or.id/" target="_blank">
+                          FOUNDATION
+                        </A>
+                      </li>
+                      <li>
+                        <A href="https://sawala.space/" target="_blank">
+                          SPACE
+                        </A>
+                      </li>
+                    </ul>
+                  )}
+                </div>
+              </li>
+            </ul>
           </div>
           <div tw="relative w-auto h-auto flex justify-end p-4">
             <Image
