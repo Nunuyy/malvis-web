@@ -79,7 +79,7 @@ const Ul = styled.ul`
   ${tw`list-outside ml-4 list-disc my-5 text-[#3B82F6]`}
 `
 const ImageWrapper = styled.div`
-  ${tw`w-[170px] h-[70px] relative`}
+  ${tw`w-[155px] h-[65px] relative`}
   @media (max-width: 1160px) and (min-width: 1024px) {
     ${tw`w-[150px] h-[60px]`}
   }

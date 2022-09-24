@@ -1,0 +1,14 @@
+[
+  {
+    "icon": "/assets/images/product-formulir.png",
+    "title": "Formulir",
+    "subtitle": "Buat formulir pendaftaran dan penjualan dengan mudah. Terintegrasi dengan berbagai metode pembayaran dan dapat dikostumasi.",
+    "link": "https://formulir.id/"
+  },
+  {
+    "icon": "/assets/images/product-kelasna.png",
+    "title": "Kelasna",
+    "subtitle": "Bangun e-learning platform untuk organisasi Anda dengan mudah. Dapat secara flexible diintegrasikan dengan berbagai sistem.",
+    "link": "https://www.kelasna.id/"
+  }
+]

@@ -68,6 +68,7 @@ export const Hero: React.FC = () => {
                   height={isDesktop ? 390 : 0}
                   layout={isDesktop ? 'fixed' : 'fill'}
                   unoptimized={true}
+                  tw="object-cover"
                 />
               </ContentImage>
             </Content>
