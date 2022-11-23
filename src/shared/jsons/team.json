@@ -1,0 +1,20 @@
+[
+  {
+    "image": "/assets/images/team-1.png",
+    "name": "Irfan Sholeh",
+    "about": "Managing Director",
+    "link": "https://id.linkedin.com/in/irfansholeh"
+  },
+  {
+    "image": "/assets/images/team-2.png",
+    "name": "Aldy Cavalera",
+    "about": "Lead Developer",
+    "link": "https://id.linkedin.com/in/aldycavalera"
+  },
+  {
+    "image": "/assets/images/team-3.png",
+    "name": "Andri Junaedi",
+    "about": "Lead DevOps",
+    "link": "https://id.linkedin.com/in/andrijunaedi"
+  }
+]

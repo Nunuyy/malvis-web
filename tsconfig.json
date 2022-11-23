@@ -30,7 +30,7 @@
       "@styles/*": ["src/shared/styles/*"],
       "@jsons/*": ["src/shared/jsons/*"],
       "@intl/*": ["src/shared/jsons/intl/*"],
-      "@static/*": ["public/static/*"],
+      "@assets/*": ["public/assets/*"],
       "@services/*": ["src/services/*"],
       "@hooks/*": ["src/hooks/*"],
       "@utils/*": ["src/utils/*"]

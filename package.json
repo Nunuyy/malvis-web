@@ -37,7 +37,8 @@
     "react-dom": "17.0.2",
     "react-feather": "^2.0.9",
     "react-scroll": "^1.8.4",
-    "sharp": "0.27.2"
+    "sharp": "0.27.2",
+    "swr": "^1.2.2"
   },
   "devDependencies": {
     "@babel/plugin-syntax-typescript": "^7.14.5",

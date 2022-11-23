@@ -15,6 +15,11 @@
     "offset": -55
   },
   {
+    "to": "solution",
+    "title": "Solution",
+    "offset": -55
+  },
+  {
     "to": "product",
     "title": "Product",
     "offset": -50

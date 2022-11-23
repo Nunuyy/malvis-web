@@ -16,7 +16,7 @@ module.exports = {
     '@/styles/(.*)': ['<rootDir>/shared/styles/$1'],
     '@/jsons/(.*)': ['<rootDir>/shared/jsons/$1'],
     '@/intl/(.*)': ['<rootDir>/shared/jsons/intl/$1'],
-    '@/static/(.*)': ['<rootDir>/public/static/$1'],
+    '@/assets/(.*)': ['<rootDir>/public/assets/$1'],
     '@/services/(.*)': ['<rootDir>/services/$1'],
     '@/hooks/(.*)': ['<rootDir>/hooks/$1'],
     '@/hooks': ['<rootDir>/hooks/index.ts'],

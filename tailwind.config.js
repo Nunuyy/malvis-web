@@ -20,7 +20,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-background': "url('/assets/images/hero-background.png')",
-        'formulir-background': "url('/assets/images/formulir-background.png')"
+        'formulir-background': "url('/assets/images/formulir-background.png')",
+        'hero-desa': "url('/assets/images/bgdesa.png')",
+        'info-desa': "url('/assets/images/bgdesa1.png')"
       }
     }
   },

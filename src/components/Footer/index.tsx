@@ -10,7 +10,7 @@ const Background = styled.div`
 `
 
 const Content = styled.div`
-  ${tw`flex flex-col items-center justify-between w-full py-8 md:pt-[6.25rem] md:pb-12 md:px-24 lg:px-64 text-center`}
+  ${tw`flex flex-col items-center justify-between w-full py-8 md:pt-[6rem] md:pb-12 md:px-24 lg:px-64 text-center`}
 `
 export const Footer: React.FC = () => {
   return (
