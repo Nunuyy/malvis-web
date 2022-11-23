@@ -26,7 +26,7 @@ const ContentHead = styled.h1`
   ${tw`mt-4 mb-5 text-3xl font-bold`}
 `
 const ContentSub = styled.p`
-  ${tw`md:w-6/12 lg:w-10/12 mb-4 md:mb-8`}
+  ${tw`mb-4 md:w-6/12 lg:w-10/12 md:mb-8`}
   @media (max-width: 1024px) and (min-width: 768px) {
     ${tw`w-full mb-24`}
   }
