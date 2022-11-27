@@ -40,7 +40,7 @@ export const Service: React.FC = () => {
                   <Button
                     text="Learn More"
                     variant="malvis-red"
-                    tw="rounded-full px-8 place-content-center md:block hidden"
+                    tw="rounded-full px-8 place-content-center md:block hidden mx-auto"
                     external={true}
                     url="#"
                   />
