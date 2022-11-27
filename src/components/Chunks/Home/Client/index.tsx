@@ -1,45 +1,44 @@
 import { Container } from '@/components/Layouts'
-import Button from '@components/Buttons'
-import { useClient } from '@hooks/useClient'
+// import Button from '@components/Buttons'
+// import { useClient } from '@hooks/useClient'
 import { Element } from 'react-scroll'
 import tw, { styled } from 'twin.macro'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 const Background = styled.div`
-  ${tw`bg-gray-50`}
+  ${tw``}
 `
 const Content = styled.div`
-  ${tw`flex flex-col items-center justify-between w-full pt-16 pb-16 lg:pb-[5.625rem] text-center`}
-`
-const ContentHead = styled.h1`
-  ${tw`text-3xl font-bold lg:text-4xl mb-7`}
-`
-const Contentsub = styled.div`
-  ${tw`text-gray-500 md:px-44 lg:px-44`}
-`
-const ContentGalery = styled.div`
-  ${tw`lg:w-10/12 sm:px-5 mt-[3.75rem] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 lg:grid-rows-3 gap-4`}
-`
-const ContentGaleryItems = styled.div`
-  ${tw`h-[5rem] lg:h-[7rem] w-full border rounded shadow flex justify-center items-center p-5 cursor-pointer hover:bg-blue-300`}
+  ${tw`flex flex-col items-center justify-between w-full text-center`}
 `
 
+const Contentsub = styled.p`
+  ${tw`text-dark mb-5 text-justify md:text-center`}
+`
+// const ContentGalery = styled.div`
+//   ${tw`lg:w-10/12 sm:px-5 mt-[3.75rem] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 lg:grid-rows-3 gap-4`}
+// `
+// const ContentGaleryItems = styled.div`
+//   ${tw`h-[5rem] lg:h-[7rem] w-full border rounded shadow flex justify-center items-center p-5 cursor-pointer hover:bg-blue-300`}
+// `
+
 export const Client: React.FC = () => {
-  const { dataClient, isLoadingClient } = useClient(`featured-client?populate=Component.image`)
+  // const { dataClient, isLoadingClient } = useClient(`featured-client?populate=Component.image`)
   return (
     <>
       <Element name="client" className="element">
         <Background>
           <Container>
             <Content>
-              <ContentHead>
-                Featured Clients<span tw="text-secondary">_</span>
-              </ContentHead>
               <Contentsub>
-                Kami telah dipercaya perusahaan nasional dan internasional untuk mengembangkan, mengelola dan memelihara
-                software/sistem informasi mereka.
+                The government's reconciliation can be widely large and strong sanctions for inaccurate tax reporting we are
+                experienced in the tax process from the process of corrections, appeal, tax-fed lawsuit, and Indonesian
+                national police handling in tax crimes. Therefore, managing the risk of your tax exposure is very important,
+                either in terms of you are looking for peace of mind for your own company or before buying . This risk can be
+                managed by reviewing your financial statements, accounting records and your tax reports to ensure any tax
+                inaccuracies or exposure can be identified and actions taken at the right time.
               </Contentsub>
-              <ContentGalery>
+              {/* <ContentGalery>
                 {!isLoadingClient && (
                   <>
                     {dataClient?.data?.attributes?.Component?.map((data: any, i: number) => (
@@ -56,8 +55,8 @@ export const Client: React.FC = () => {
                     ))}
                   </>
                 )}
-              </ContentGalery>
-              <Button text="More Client" tw="hidden rounded-full px-12 mt-10"></Button>
+              </ContentGalery> */}
+              {/* <Button text="More Client" tw="hidden rounded-full px-12 mt-10"></Button> */}
             </Content>
           </Container>
         </Background>

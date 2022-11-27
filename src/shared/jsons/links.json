@@ -5,33 +5,23 @@
     "offset": -55
   },
   {
-    "to": "about",
+    "to": "service",
     "title": "About",
     "offset": -55
   },
   {
-    "to": "service",
-    "title": "Service",
-    "offset": -55
-  },
-  {
     "to": "solution",
-    "title": "Solution",
+    "title": "Practices Area",
     "offset": -55
   },
   {
-    "to": "product",
-    "title": "Product",
-    "offset": -50
-  },
-  {
-    "to": "technology",
-    "title": "Technology",
-    "offset": -45
+    "to": "team",
+    "title": "Profile",
+    "offset": -55
   },
   {
     "to": "contactus",
-    "title": "Contact Us",
-    "offset": -58
+    "title": "Our Team",
+    "offset": -50
   }
 ]

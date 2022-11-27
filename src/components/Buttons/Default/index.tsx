@@ -1,6 +1,6 @@
 import tw, { styled } from 'twin.macro'
 
-type Variants = 'primary' | 'secondary' | 'tertiary'
+type Variants = 'primary' | 'secondary' | 'tertiary' | 'malvis' | 'malvis-red'
 type Sizes = 'xs' | 'sm' | 'md' | 'lg'
 type ExtraSizes = 'xl' | '2xl' | '3xl' | 'full'
 interface DefaultButtonProps {
@@ -26,15 +26,17 @@ const Button = styled.button<Omit<DefaultButtonProps, 'text'>>`
   ${(props) => props.size === 'md' && tw`px-5 py-3`}
   ${(props) => props.size === 'lg' && tw`py-3 px-9`}
   ${(props) => props.variant === 'primary' && tw`text-white bg-primary`}
+  ${(props) => props.variant === 'malvis-red' && tw`text-white bg-malvis`}
+  ${(props) => props.variant === 'malvis' && tw`text-white bg-[#313C55] `}
   ${(props) => props.variant === 'secondary' && tw`bg-white text-primary`}
   ${(props) => props.variant === 'tertiary' && tw`text-black bg-primary`}
 `
 export const DefaultButton: React.FC<DefaultButtonProps> = ({
   text,
-  variant = 'primary',
+  variant = 'malvis',
   url,
-  size = 'md',
-  rounded = 'md',
+  size = 'sm',
+  rounded = 'sm',
   external,
   ...rest
 }) => {

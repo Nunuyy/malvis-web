@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
               <ReactLink
                 activeClass="active"
                 offset={-60}
-                to="about"
+                to="service"
                 spy={true}
                 smooth={true}
                 duration={300}
@@ -42,42 +42,22 @@ export const Footer: React.FC = () => {
               <ReactLink
                 activeClass="active"
                 offset={-60}
-                to="service"
+                to="solution"
                 spy={true}
                 smooth={true}
                 duration={300}
                 className="cursor-pointer hover:text-black">
-                Service
+                Practices Area
               </ReactLink>
               <ReactLink
                 activeClass="active"
                 offset={-60}
-                to="product"
+                to="team"
                 spy={true}
                 smooth={true}
                 duration={300}
                 className="cursor-pointer hover:text-black">
-                Product
-              </ReactLink>
-              <ReactLink
-                activeClass="active"
-                offset={-60}
-                to="casestudy"
-                spy={true}
-                smooth={true}
-                duration={300}
-                className="hidden">
-                Case Study
-              </ReactLink>
-              <ReactLink
-                activeClass="active"
-                offset={-60}
-                to="technology"
-                spy={true}
-                smooth={true}
-                duration={300}
-                className="cursor-pointer hover:text-black">
-                Technology
+                Profile
               </ReactLink>
               <ReactLink
                 activeClass="active"
@@ -87,27 +67,27 @@ export const Footer: React.FC = () => {
                 smooth={true}
                 duration={300}
                 className="cursor-pointer hover:text-black">
-                Contact Us
+                OurTeam
               </ReactLink>
             </div>
             <div tw="flex space-x-3 md:space-x-0 justify-evenly w-3/12 text-gray-500 my-8">
-              <Link href="https://www.facebook.com/sawala.tech/">
+              <Link href="#">
                 <a target="_blank">
                   <Image unoptimized={true} src={'/assets/icons/facebook.png'} height={20} width={20} layout="fixed" />
                 </a>
               </Link>
-              <Link href="https://www.instagram.com/sawala.tech/">
+              <Link href="#">
                 <a target="_blank">
                   <Image unoptimized={true} src={'/assets/icons/instagram.png'} height={20} width={20} layout="fixed" />
                 </a>
               </Link>
-              <Link href="https://www.linkedin.com/company/sawala/">
+              <Link href="#">
                 <a target="_blank">
                   <Image unoptimized={true} src={'/assets/icons/linked.png'} height={20} width={20} layout="fixed" />
                 </a>
               </Link>
             </div>
-            <p tw="text-gray-400 px-5">© {new Date().getFullYear()} PT Sawala Inovasi Indonesia. All rights reserved.</p>
+            <p tw="text-gray-400 px-5">© {new Date().getFullYear()} Malvis Human & Legal. All rights reserved.</p>
           </Content>
         </Container>
       </Background>

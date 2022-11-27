@@ -38,8 +38,8 @@ const _APP = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <title>SAWALA Technology — Accelerate goods things with technology</title>
-        <link rel="icon" type="image/ico" href="/assets/icons/logo.png"></link>
+        <title>MALVIS — Human & Legal</title>
+        <link rel="icon" type="image/ico" href="/assets/icons/malvis-logo.svg"></link>
         <meta name="robots" content="index, follow" />
       </Head>
       <Component {...pageProps} />

@@ -4,7 +4,7 @@ const NavLinks = styled(Link)`
   color: white;
   &.active {
     font-weight: 700;
-    border-bottom: 4px solid #ef4444;
+    border-bottom: 4px solid #b81c26;
   }
 `
 import { FC } from 'react'
