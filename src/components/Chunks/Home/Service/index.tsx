@@ -28,11 +28,11 @@ export const Service: React.FC = () => {
           <Container tag={'div'} tw="p-5 md:p-14">
             <Content>
               <ContentLeft>
-                <ContentLeftService tw="md:mt-96 lg:mb-12 mt-12">
+                <ContentLeftService tw="md:mt-96 lg:mb-12 mt-10">
                   <p tw="text-center font-bold md:text-4xl lg:my-5 hidden md:block text-white mb-2 md:mb-0">ABOUT US</p>
-                  <p tw="text-white mb-2  md:mb-5 md:text-center sm:text-justify text-sm">
+                  <p tw="text-white -translate-y-20 mb-2  md:mb-5 md:text-center sm:text-justify text-sm">
                     Local Counsel, Globally Connected Malvis Attorneys at Law Law Office founded in 2022 with a wide range of
-                    its Founding Partners experiences, which are{' '}
+                    its Founding Partners experiences, which are
                     <b>Zubet Rizal.S.H., Reza Satria Kinayungan.S.H, CTL., Gading Yonggar Ditya.S.H.</b> Supported with
                     strong analitycal of Lawyers, Paralegal, as well as Field Administration Staff who will be incharged as a
                     solid team to provide many legal consultation to give the best service for valuable clients.
@@ -40,7 +40,7 @@ export const Service: React.FC = () => {
                   <Button
                     text="Learn More"
                     variant="malvis-red"
-                    tw="rounded-full px-8 place-content-center"
+                    tw="rounded-full px-8 place-content-center md:block hidden"
                     external={true}
                     url="#"
                   />

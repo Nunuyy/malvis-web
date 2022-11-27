@@ -13,7 +13,7 @@ const Content = styled.div`
 `
 
 const Contentsub = styled.p`
-  ${tw`text-dark mb-5 text-justify md:text-center`}
+  ${tw`text-dark md:mb-5 mb-0 mt-14 md:mt-0 text-justify md:text-center`}
 `
 // const ContentGalery = styled.div`
 //   ${tw`lg:w-10/12 sm:px-5 mt-[3.75rem] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 lg:grid-rows-3 gap-4`}
