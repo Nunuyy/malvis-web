@@ -11,7 +11,7 @@ const Background = styled.div`
   ${tw`flex items-center w-full lg:h-screen bg-cover bg-center bg-bglaw bg-[#EFF6FF] bg-opacity-80 backdrop-blur-lg`}
 `
 const Content = styled.div`
-  ${tw`items-center flex flex-col-reverse lg:flex-row justify-between w-full space-y-10 md:space-y-20 sm:space-y-20`}
+  ${tw`flex flex-col-reverse items-center justify-between w-full space-y-10 lg:flex-row md:space-y-20 sm:space-y-20`}
 `
 const ContentText = styled.div`
   ${tw`px-5 md:px-5 md:w-5/6 lg:w-[40%] lg:px-0 md:pb-[2.25rem]`}
@@ -20,7 +20,7 @@ const ContentTextHead = styled.p`
   ${tw`pt-16 md:pt-32 lg:pt-0 md:-my-16 text-[#d9d9d9]`}
 `
 const ContentTextSub = styled.p`
-  ${tw`text-gray-300  text-left md:text-justify lg:text-base`}
+  ${tw`text-left text-gray-300 md:text-justify lg:text-base`}
 `
 const ContentImage = styled.div`
   ${tw`relative items-center lg:w-[60%] w-full flex justify-center sm:h-[20rem] h-[15rem] md:h-[33rem]`}
@@ -58,7 +58,7 @@ export const Hero: React.FC = () => {
                 /> */}
               </ContentImage>
               <ContentText>
-                <ContentTextHead data-aos="fade" className="malvis title">
+                <ContentTextHead data-aos="fade" className="malvis title1">
                   Malvis
                 </ContentTextHead>
                 <ContentTextSub className="desc">
