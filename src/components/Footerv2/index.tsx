@@ -3,7 +3,7 @@ import tw, { styled } from 'twin.macro'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import dataLinks from '@jsons/links.json'
 import Links from '@/components/Link'
 import AOS from 'aos'
@@ -25,8 +25,6 @@ interface Footerv2 {
 }
 
 export const Footerv2: React.FunctionComponent<Footerv2 & React.HTMLAttributes<HTMLOrSVGElement>> = ({ open, onClose }) => {
-  const [isDesktop, setIsDesktop] = useState(false)
-
   useEffect(() => {
     AOS.init({
       duration: 3000
@@ -40,18 +38,6 @@ export const Footerv2: React.FunctionComponent<Footerv2 & React.HTMLAttributes<H
 
   const router = useRouter()
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 1024) {
-        setIsDesktop(true)
-      } else {
-        setIsDesktop(false)
-      }
-    }
-    handleResize()
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
   return (
     <>
       <Background>

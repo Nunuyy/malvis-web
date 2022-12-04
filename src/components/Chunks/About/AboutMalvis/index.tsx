@@ -1,5 +1,4 @@
 /* eslint-disable prettier/prettier */
-import Button from '@/components/Buttons'
 import { Container } from '@/components/Layouts'
 // import Image from 'next/image'
 import { Element } from 'react-scroll'

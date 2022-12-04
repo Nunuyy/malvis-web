@@ -1,8 +1,7 @@
 import Button from '@/components/Buttons'
 import { Container } from '@/components/Layouts'
 import { Navbar } from '@/components/Navbar'
-import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { Element, Link } from 'react-scroll'
 import tw, { styled } from 'twin.macro'
 import AOS from 'aos'
@@ -28,22 +27,10 @@ const ContentImage = styled.div`
 `
 
 export const Hero: React.FC = () => {
-  const [isDesktop, setIsDesktop] = useState(false)
-
   useEffect(() => {
     AOS.init({
       duration: 3000
     })
-    const handleResize = () => {
-      if (window.innerWidth > 1024) {
-        setIsDesktop(true)
-      } else {
-        setIsDesktop(false)
-      }
-    }
-    handleResize()
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
   }, [])
   return (
     <>

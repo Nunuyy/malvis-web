@@ -1,11 +1,9 @@
-import Button from '@/components/Buttons'
 import { Container } from '@/components/Layouts'
 import { Navbar } from '@/components/Navbar'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { Element, Link } from 'react-scroll'
+import { Element } from 'react-scroll'
 import tw, { styled } from 'twin.macro'
-import { useRouter } from 'next/router'
 import dataLinks from '@jsons/links.json'
 import Links from '@/components/Link'
 import AOS from 'aos'
@@ -56,8 +54,6 @@ export const HeroMalvis: React.FunctionComponent<HeroMalvis & React.HTMLAttribut
       getOpen()
     }
   }, [open])
-
-  const router = useRouter()
 
   useEffect(() => {
     const handleResize = () => {
