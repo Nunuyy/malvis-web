@@ -41,9 +41,9 @@ export const PracticesMalvis: React.FC = () => {
                 We provide advocacy services for civil, criminal and commercial disputes as well as other litigation matters
                 before Indonesian courts. Our services include both civil and criminal proceedings. We our client assist in
                 legal disputes pertaining to, among others, contractual and shareholders disputes, Corruption, general
-                commercial litigation, commercial arbitration, land disputes, Family law (inheritance ,Divorce , pre-nuptial
-                agreement , ) and bankruptcy/insolvency. We assist in formulating dispute strategies, assembling and
-                analyzing facts and evidences, and court proceedings.
+                commercial litigation, commercial arbitration, land disputes, Family law (inheritance, Divorce, pre-nuptial
+                agreement, ) and bankruptcy/insolvency. We assist in formulating dispute strategies, assembling and analyzing
+                facts and evidences, and court proceedings.
               </p>
               {/* <Button
                 text="Learn More"
