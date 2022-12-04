@@ -1,2 +1,2 @@
 export { HeroMalvis } from './HeroMalvis'
-export { GalleryMalvis } from './GalleryMalvis'
+export { AboutMalvis } from './AboutMalvis'
