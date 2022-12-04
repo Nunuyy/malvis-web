@@ -16,6 +16,9 @@ const ContentLeft = styled.div`
 const ContentLeftService = styled.div`
   ${tw`lg:w-full items-center justify-center md:text-center text-justify`}
 `
+const ContentHead = styled.h1`
+  ${tw`mt-20 mb-5 text-center text-3xl font-bold text-malvisblue md:mt-0 lg:text-4xl`}
+`
 // const ContentMobileRight = styled.div`
 //   ${tw`flex justify-center py-10 md:justify-start lg:hidden lg:w-1/2`}
 // `
@@ -28,8 +31,8 @@ export const AboutMalvis: React.FC = () => {
           <Container tw="p-5 md:p-14">
             <ContentLeft>
               <ContentLeftService>
-                <p tw="text-center text-malvisblue font-bold md:text-4xl lg:my-5  mb-2 md:mb-0">ABOUT US</p>
-                <p tw="text-[#232323] mb-2  md:mb-5 md:text-center text-justify text-sm">
+                <ContentHead>ABOUT US</ContentHead>
+                <p tw="text-[#232323] md:mb-5 md:text-center text-justify text-sm mb-20">
                   Local Counsel, Globally Connected Malvis Attorneys at Law Law Office founded in 2022 with a wide range of
                   its Founding Partners experiences, which are &nbsp;
                   <b>Zubet Rizal.S.H., Reza Satria Kinayungan.S.H, CTL., Gading Yonggar Ditya.S.H.</b> Supported with strong

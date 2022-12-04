@@ -59,7 +59,7 @@ export const ProfileMalvis: React.FC = () => {
   }, [])
   return (
     <>
-      <Element name="profile" className="element bg-white">
+      <Element name="profile" className="bg-white element">
         <Content>
           <div tw="w-3/5 hidden md:block" data-aos="fade-right">
             <ContentHead>PROFILE</ContentHead>
@@ -95,7 +95,7 @@ export const ProfileMalvis: React.FC = () => {
               className="translate-y-4"
             />
           </div>
-          <div tw="md:hidden block" data-aos="fade-left">
+          <div tw="md:hidden block" data-aos="fade">
             <ContentHead>PROFILE</ContentHead>
             <p tw="text-justify px-5 text-dark pb-20">
               Reza graduated from Gajdah Mada University started the experience of working at the Tony Hasibuan & Partners
