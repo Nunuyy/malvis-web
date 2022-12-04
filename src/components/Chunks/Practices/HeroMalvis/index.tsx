@@ -22,7 +22,7 @@ const ContentTextHead = styled.p`
   ${tw`h-auto pt-16  md:pt-32  md:-my-16 lg:pb-8 lg:pt-0 text-[#d9d9d9]`}
 `
 const Desc = styled.p`
-  ${tw`text-malvis font-semibold text-2xl`}
+  ${tw`text-2xl font-semibold text-malvis`}
 `
 // const ContentTextSub = styled.p`
 //   ${tw`text-justify text-gray-300 md:text-left lg:pr-16 lg:text-xl`}
@@ -31,7 +31,7 @@ const ContentImage = styled.div`
   ${tw`relative items-center lg:w-[50%] w-full flex justify-center sm:h-[20rem] h-[15rem] md:h-[33rem]`}
 `
 const ContentTextSub = styled.p`
-  ${tw`text-gray-300 text-left md:text-justify lg:text-base`}
+  ${tw`text-left text-gray-300 md:text-justify lg:text-base`}
 `
 interface HeroMalvis {
   open: boolean
@@ -97,8 +97,8 @@ export const HeroMalvis: React.FunctionComponent<HeroMalvis & React.HTMLAttribut
                 <Image
                   src={isDesktop ? '/assets/icons/malvis-logo.svg' : '/assets/images/malvis-logo.svg'}
                   className={isDesktop ? 'rounded-full' : 'rounded-full'}
-                  width={isDesktop ? 390 : 0}
-                  height={isDesktop ? 390 : 0}
+                  width={isDesktop ? 250 : 0}
+                  height={isDesktop ? 250 : 0}
                   layout={isDesktop ? 'fixed' : 'fixed'}
                   unoptimized={true}
                   tw="object-cover"

@@ -73,7 +73,7 @@ export const ProfileMalvis: React.FC = () => {
               University of Profession of Business Law.
             </p>
           </div>
-          <div tw="w-2/5 pt-10 bg-bg-owner hidden md:block bg-no-repeat bg-cover bg-center" data-aos="fade-left">
+          <div tw="w-2/5 pt-10 bg-bg-owner hidden md:block bg-no-repeat bg-cover bg-center" data-aos="fade">
             <Image
               unoptimized={true}
               src={'/assets/images/owner.png'}
@@ -84,7 +84,7 @@ export const ProfileMalvis: React.FC = () => {
               className="translate-x-4"
             />
           </div>
-          <div tw="bg-[#d9d9d9] md:hidden block bg-no-repeat bg-cover bg-center " data-aos="fade-right">
+          <div tw="bg-[#d9d9d9] md:hidden block bg-no-repeat bg-cover bg-center " data-aos="fade">
             <Image
               unoptimized={true}
               src={'/assets/images/owner.png'}
