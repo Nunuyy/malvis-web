@@ -4,9 +4,9 @@ import { Footerv2 } from '@/components/Footerv2'
 const Profile = () => {
   return (
     <>
-      <HeroMalvis />
+      <HeroMalvis open={false} />
       <ProfileMalvis />
-      <Footerv2 />
+      <Footerv2 open={false} />
     </>
   )
 }

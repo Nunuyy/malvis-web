@@ -4,11 +4,11 @@ import { Footerv2 } from '@/components/Footerv2'
 const Practices = () => {
   return (
     <>
-      <HeroMalvis />
+      <HeroMalvis open={false} />
       <PracticesMalvis />
       <Ccmalvis />
       <Desc />
-      <Footerv2 />
+      <Footerv2 open={false} />
     </>
   )
 }

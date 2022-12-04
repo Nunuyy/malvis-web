@@ -5,7 +5,7 @@ const LandingPage: React.FC = () => {
     <>
       <Hero />
       <About />
-      <Footer />
+      <Footer open={false} />
     </>
   )
 }

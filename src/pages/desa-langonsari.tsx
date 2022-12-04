@@ -8,7 +8,7 @@ const Desa = () => {
       <Navbar withScrolled={false} />
       <HeroDesa />
       <AboutDesa />
-      <Footer />
+      <Footer open={false} />
     </>
   )
 }
