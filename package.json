@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "babel src -d lib",
     "test": "jest --env=jsdom --passWithNoTests",
     "start": "next start",
     "dev": "env NODE_ENV=development TAILWIND_MODE=watch next dev",
