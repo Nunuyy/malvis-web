@@ -1,16 +1,10 @@
-import { Hero, About, Service, Technology, Contact, Client, Solution, Team } from '@/components/Chunks/Home'
+import { Hero, About } from '@/components/Chunks/Home'
 import { Footer } from '@/components/Footer'
 const LandingPage: React.FC = () => {
   return (
     <>
       <Hero />
       <About />
-      <Service />
-      <Solution />
-      <Technology />
-      <Client />
-      <Team />
-      <Contact />
       <Footer />
     </>
   )

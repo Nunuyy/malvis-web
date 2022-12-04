@@ -33,10 +33,10 @@ export const Team: React.FC = () => {
 
   // const { dataTeam, isLoadingTeam } = useTeam(`our-teams?populate=*`)
   const Content = styled.div`
-    ${tw`md:flex flex-none items-center justify-between w-full text-center my-28 md:flex-row`}
+    ${tw`items-center justify-between flex-none w-full text-center md:flex md:flex-row`}
   `
   const ContentHead = styled.h1`
-    ${tw`mt-20 md:mt-0 mb-5 text-3xl text-white font-bold lg:text-4xl`}
+    ${tw`mt-20 mb-5 text-3xl font-bold text-white md:mt-0 lg:text-4xl`}
   `
   const [isDesktop, setIsDesktop] = useState(false)
 

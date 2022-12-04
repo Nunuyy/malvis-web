@@ -2,6 +2,9 @@ import { Container } from '@/components/Layouts'
 import tw, { styled } from 'twin.macro'
 // import { useAbout } from '@hooks/useAbout'
 import { Element } from 'react-scroll'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 const Content = styled.div`
   ${tw`flex flex-col items-center justify-between w-full px-5 py-10 text-center lg:px-24`}
@@ -12,17 +15,21 @@ const Content = styled.div`
 // `
 
 const Contentsub = styled.p`
-  ${tw`text-gray-500 text-justify lg:text-base text-sm px-0`}
+  ${tw`text-[#232323] text-justify lg:text-base text-sm px-0`}
 `
 
 export const About: React.FC = () => {
   // const { dataAbout, isLoadingAbout } = useAbout(`about?populate=*`)
 
+  useEffect(() => {
+    AOS.init()
+    AOS.refresh()
+  }, [])
   return (
     <>
-      <Element name="about" className="element bg-[#ffffff]">
+      <Element name="about" className="element bg-white">
         <Container tag={'div'} tw="px-0 sm:p-5 md:p-10">
-          <Content>
+          <Content data-aos="fade">
             {/* <ContentHead>About Malvis</ContentHead> */}
             <Contentsub>
               The Firm consists of prominent professionals equipped with the experience and knowledge in handling various

@@ -5,6 +5,8 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { Element, Link } from 'react-scroll'
 import tw, { styled } from 'twin.macro'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Background = styled.div`
   ${tw`flex items-center w-full lg:h-screen bg-cover bg-center bg-bglaw bg-[#EFF6FF] bg-opacity-80 backdrop-blur-lg`}
@@ -13,22 +15,25 @@ const Content = styled.div`
   ${tw`items-center flex flex-col-reverse lg:flex-row justify-between w-full space-y-10 md:space-y-20 sm:space-y-20`}
 `
 const ContentText = styled.div`
-  ${tw`px-5 md:px-5 md:w-5/6 lg:w-[56%]  lg:px-0 md:pb-[2.25rem]`}
+  ${tw`px-5 md:px-5 md:w-5/6 lg:w-[40%] lg:px-0 md:pb-[2.25rem]`}
 `
 const ContentTextHead = styled.p`
-  ${tw`h-auto pt-16 text-2xl font-black lg:pb-8 md:text-3xl lg:text-6xl lg:pt-0 text-[#d9d9d9]`}
+  ${tw`pt-16 md:pt-32 lg:pt-0 md:-my-16 text-[#d9d9d9]`}
 `
 const ContentTextSub = styled.p`
-  ${tw`text-gray-300 md:text-left text-justify   lg:pr-16 lg:text-xl`}
+  ${tw`text-gray-300  text-left md:text-justify lg:text-base`}
 `
 const ContentImage = styled.div`
-  ${tw`relative items-center lg:w-[50%] w-full flex justify-center sm:h-[20rem] h-[15rem] md:h-[33rem]`}
+  ${tw`relative items-center lg:w-[60%] w-full flex justify-center sm:h-[20rem] h-[15rem] md:h-[33rem]`}
 `
 
 export const Hero: React.FC = () => {
   const [isDesktop, setIsDesktop] = useState(false)
 
   useEffect(() => {
+    AOS.init({
+      duration: 3000
+    })
     const handleResize = () => {
       if (window.innerWidth > 1024) {
         setIsDesktop(true)
@@ -55,7 +60,7 @@ export const Hero: React.FC = () => {
                   height={390}
                   layout={'fixed'}
                 /> */}
-                <Image
+                {/* <Image
                   src={isDesktop ? '/assets/icons/malvis-logo.svg' : '/assets/images/malvis-logo.svg'}
                   className={isDesktop ? 'rounded-full' : ''}
                   width={isDesktop ? 390 : 0}
@@ -63,16 +68,22 @@ export const Hero: React.FC = () => {
                   layout={isDesktop ? 'fixed' : 'fixed'}
                   unoptimized={true}
                   tw="object-cover"
-                />
+                /> */}
               </ContentImage>
               <ContentText>
-                <ContentTextHead>MALVIS ATTORNEYS</ContentTextHead>
-                <ContentTextSub>
+                <ContentTextHead data-aos="fade" className="malvis title">
+                  Malvis
+                </ContentTextHead>
+                <ContentTextSub className="desc">
                   Malvis Attorneys at Law Law Office is a law firm which promises to deliver domestic and international
                   clients with the highest quality and personalized legal services.
                 </ContentTextSub>
-                <Link to="service" spy={true} smooth={true} offset={-50} duration={300}>
-                  <Button text="Learn More" variant="malvis" tw="mt-6 rounded-full px-8 " />
+                <Link to="about" spy={true} smooth={true} offset={-50} duration={300}>
+                  <Button
+                    text="Learn More"
+                    variant="malvis"
+                    tw="mt-6 rounded-full px-8 hover:bg-opacity-0 hover:ring-white hover:ring-1 transition delay-100 duration-200 active:bg-white active:text-malvisblue hover:text-white focus:outline-none focus:ring-white focus:ring-1"
+                  />
                 </Link>
               </ContentText>
             </Content>

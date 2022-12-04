@@ -1,8 +1,8 @@
 import Links from '@/components/Link'
 import { Dialog, Transition } from '@headlessui/react'
 import dataLinks from '@jsons/links.json'
-// import { useRouter } from 'next/router'
-// import Link from 'next/link'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 import { Fragment, useEffect, useState } from 'react'
 import { X } from 'react-feather'
 
@@ -40,12 +40,12 @@ export const DefaultModal: React.FunctionComponent<DefaultModal & React.HTMLAttr
     }
   }, [open])
 
-  // const router = useRouter()
+  const router = useRouter()
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" tw="fixed inset-0 z-50 overflow-y-auto" onClose={onClose}>
-          <div tw="min-h-screen text-center bg-[#232323]">
+          <div tw="min-h-screen text-center bg-[#1D313E]">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-500"
@@ -84,7 +84,7 @@ export const DefaultModal: React.FunctionComponent<DefaultModal & React.HTMLAttr
                     )}
                   </div>
                 </header>
-                <div tw="flex flex-col space-y-8 text-white text-3xl transform z-30">
+                <div tw="flex flex-col space-y-8 text-white text-3xl transform z-30" className="desc">
                   <div tw="flex flex-col space-y-8 text-white text-3xl justify-center items-center h-screen z-50">
                     {dataLinks.map((dataLinks: { to: string; title: string; offset: number }, i: number) => (
                       <Links
@@ -103,6 +103,36 @@ export const DefaultModal: React.FunctionComponent<DefaultModal & React.HTMLAttr
                         Desa Langonsari
                       </span>
                     </Link> */}
+                    <Link href="/about">
+                      <span
+                        className={`text-white text-3xl cursor-pointer ${router?.asPath?.includes('about') && 'font-bold'}`}>
+                        About
+                      </span>
+                    </Link>
+                    <Link href="/practices">
+                      <span
+                        className={`text-white text-3xl cursor-pointer ${
+                          router?.asPath?.includes('practices') && 'font-bold'
+                        }`}>
+                        Practices Area
+                      </span>
+                    </Link>
+                    <Link href="/profile">
+                      <span
+                        className={`text-white text-3xl cursor-pointer ${
+                          router?.asPath?.includes('profile') && 'font-bold'
+                        }`}>
+                        Profile
+                      </span>
+                    </Link>
+                    <Link href="/ourattorneysmalvis">
+                      <span
+                        className={`text-white text-3xl cursor-pointer ${
+                          router?.asPath?.includes('ourattorneysmalvis') && 'font-bold'
+                        }`}>
+                        Our Attorneys
+                      </span>
+                    </Link>
                   </div>
                 </div>
               </div>

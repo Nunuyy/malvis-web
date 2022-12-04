@@ -3,25 +3,5 @@
     "to": "home",
     "title": "Home",
     "offset": -55
-  },
-  {
-    "to": "service",
-    "title": "About",
-    "offset": -55
-  },
-  {
-    "to": "solution",
-    "title": "Practices Area",
-    "offset": -55
-  },
-  {
-    "to": "team",
-    "title": "Profile",
-    "offset": -55
-  },
-  {
-    "to": "contactus",
-    "title": "Our Team",
-    "offset": -50
   }
 ]

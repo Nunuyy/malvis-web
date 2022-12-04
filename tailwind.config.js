@@ -13,12 +13,14 @@ module.exports = {
       secondary: '#FB0046',
       dark: '#232323',
       malvis: '#B81C26',
+      malvisblue: '#1D313E',
       ...colors
     },
     fontFamily: {
       display: ['Inter', 'sans-serif'],
       body: ['Inter', 'sans-serif']
     },
+
     extend: {
       backgroundImage: {
         bglaw: "url('/assets/images/bglaw.png')",
