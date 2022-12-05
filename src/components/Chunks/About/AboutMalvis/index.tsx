@@ -3,6 +3,9 @@ import { Container } from '@/components/Layouts'
 // import Image from 'next/image'
 import { Element } from 'react-scroll'
 import tw, { styled } from 'twin.macro'
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Background = styled.div`
   ${tw`bg-[#d9d9d9]`}
@@ -24,6 +27,10 @@ const ContentHead = styled.h1`
 // `
 
 export const AboutMalvis: React.FC = () => {
+  useEffect(() => {
+    AOS.init()
+    AOS.refresh()
+  }, [])
   return (
     <>
       <Element name="aboutmalvis" className="element">
@@ -31,8 +38,8 @@ export const AboutMalvis: React.FC = () => {
           <Container tw="p-5 md:p-14">
             <ContentLeft>
               <ContentLeftService>
-                <ContentHead>ABOUT US</ContentHead>
-                <p tw="text-[#232323] md:mb-5 md:text-center text-justify text-sm mb-20">
+                <ContentHead data-aos="fade-up">ABOUT US</ContentHead>
+                <p tw="text-[#232323] md:mb-5 md:text-center text-justify text-sm mb-20" data-aos="fade-down">
                   Local Counsel, Globally Connected Malvis Attorneys at Law Law Office founded in 2022 with a wide range of
                   its Founding Partners experiences, which are &nbsp;
                   <b>Zubet Rizal.S.H., Reza Satria Kinayungan.S.H, CTL., Gading Yonggar Ditya.S.H.</b> Supported with strong
