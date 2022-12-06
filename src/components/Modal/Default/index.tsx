@@ -45,7 +45,7 @@ export const DefaultModal: React.FunctionComponent<DefaultModal & React.HTMLAttr
     <>
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" tw="fixed inset-0 z-50 overflow-y-auto" onClose={onClose}>
-          <div tw="min-h-screen text-center bg-[#1D313E]">
+          <div tw="min-h-screen text-center bg-[#232323]">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-500"
