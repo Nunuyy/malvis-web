@@ -10,12 +10,9 @@
 const REQUIRED_CONFIG = {
   reactStrictMode: true, // true | false
   env: {
-    SITE_NAME: 'Sawala Boilerplate',
+    SITE_NAME: 'Malvis Attorneys',
     BASE_URL: process.env.BASE_URL,
     API_URL: process.env.API_URL
-  },
-  images: {
-    domains: ['sawalatech.s3.ap-southeast-1.amazonaws.com']
   }
 }
 

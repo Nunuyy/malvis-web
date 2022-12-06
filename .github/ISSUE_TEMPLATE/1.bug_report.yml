@@ -1,7 +1,7 @@
 name: Bug Report
-description: Create a bug report for the sawala-tech
+description: Create a bug report for the malvis-attorneys
 labels:
-  - "bug"
+  - 'bug'
 body:
   - type: markdown
     attributes:
@@ -15,11 +15,11 @@ body:
   - type: input
     attributes:
       label: What browser are you using? (if relevant)
-      description: "Please specify the exact version. For example: Chrome 100.0.4878.0"
+      description: 'Please specify the exact version. For example: Chrome 100.0.4878.0'
   - type: textarea
     attributes:
       label: Describe the Bug
-      description: A clear and concise description of what the bug is. 
+      description: A clear and concise description of what the bug is.
     validations:
       required: true
   - type: textarea
@@ -31,7 +31,7 @@ body:
   - type: input
     attributes:
       label: Link to reproduction
-      description: A link to a reproduction of the bug on `[sawala.tech](https://sawala.tech)`.
+      description: A link to a reproduction of the bug on `[malvis.co.id](https://malvis.co.id)`.
     validations:
       required: true
   - type: textarea

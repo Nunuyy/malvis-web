@@ -57,49 +57,6 @@ export const Navbar: FC<LinkProps> = ({ withScrolled = true }) => {
               onClick={() => router?.push('/')}
             />
           </div>
-          {/* <div tw="w-11/12">
-            <ul tw="relative w-auto h-auto flex items-center p-2 ">
-              <li tw="relative">
-                <div tw="flex justify-center items-center">
-                  <a
-                    tw="text-[#011154] text-base font-body cursor-pointer px-2 flex items-center border-l-[0.5px] border-black order-1"
-                    onClick={() => setDropdown(!dropdown)}>
-                    <div tw="relative w-[138px] h-auto flex justify-start p-3">
-                      <Image unoptimized={true} src={'/assets/images/tech.svg'} layout={'fill'} />
-                    </div>
-                    <div tw="relative w-[11px] h-auto flex p-1 px-4">
-                      <Image
-                        unoptimized={true}
-                        src={dropdown ? '/assets/images/chevron-rotate.svg' : '/assets/images/chevron.svg'}
-                        layout={'fill'}
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div
-                  className={`${
-                    dropdown
-                      ? 'absolute mt-4 bg-white border-b border-white rounded-md shadow-md transition-all duration-200'
-                      : ''
-                  }`}>
-                  {dropdown && (
-                    <ul tw=" w-[181px]">
-                      <li>
-                        <A href="https://sawala.or.id/" target="_blank">
-                          FOUNDATION
-                        </A>
-                      </li>
-                      <li>
-                        <A href="https://sawala.space/" target="_blank">
-                          SPACE
-                        </A>
-                      </li>
-                    </ul>
-                  )}
-                </div>
-              </li>
-            </ul>
-          </div> */}
           <div tw="relative w-auto h-auto flex justify-end p-4">
             <Image
               unoptimized={true}

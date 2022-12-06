@@ -1,7 +1,7 @@
 name: Feature Request
-description: Create a feature request for sawala-tech
+description: Create a feature request for malvis-attorneys
 labels:
-  - "feature"
+  - 'feature'
 body:
   - type: markdown
     attributes:

@@ -1,7 +1,7 @@
 name: Enchancement Request
-description: Create a enchancement request for sawala-tech. Improve an existing feature.
+description: Create a enchancement request for malvis-attorneys. Improve an existing feature.
 labels:
-  - "enhancement"
+  - 'enhancement'
 body:
   - type: markdown
     attributes:
