@@ -51,7 +51,7 @@ export const Navbar: FC<LinkProps> = ({ withScrolled = true }) => {
           <div tw="relative w-[155px] h-auto justify-start cursor-pointer md:hidden flex">
             <Image
               unoptimized={true}
-              src={'/assets/icons/malvis-logo.svg'}
+              src={'/assets/icons/malvis-logo.png'}
               width={100}
               height={100}
               onClick={() => router?.push('/')}
