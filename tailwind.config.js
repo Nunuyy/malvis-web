@@ -13,7 +13,7 @@ module.exports = {
       secondary: '#FB0046',
       dark: '#232323',
       malvis: '#B81C26',
-      malvisblue: '#1D313E',
+      malvisblue: '#232323',
       ...colors
     },
     fontFamily: {

@@ -12,19 +12,19 @@ const Background = styled.div`
   ${tw`flex items-center w-full lg:h-screen bg-cover bg-center bg-bglaw bg-[#EFF6FF] bg-opacity-80 backdrop-blur-lg`}
 `
 const Content = styled.div`
-  ${tw`flex flex-col-reverse items-center justify-between w-full space-y-10 lg:flex-row md:space-y-20 sm:space-y-20`}
+  ${tw`flex flex-col-reverse items-center place-content-center justify-center w-full space-y-10 lg:flex-row md:space-y-20 sm:space-y-20`}
 `
 const ContentText = styled.div`
   ${tw`px-5 md:px-5 md:w-5/6 lg:w-[40%] lg:px-0 md:pb-[2.25rem]`}
 `
 const ContentTextHead = styled.p`
-  ${tw`pt-16 md:pt-32 lg:pt-0 text-[#d9d9d9]`}
+  ${tw`pt-16 md:pt-32 lg:pt-0 md:w-[50%] text-[#d9d9d9]`}
 `
 const ContentTextSub = styled.p`
   ${tw`text-left text-gray-300 md:text-justify lg:text-base`}
 `
 const ContentImage = styled.div`
-  ${tw`relative items-center lg:w-[60%] w-full flex justify-center sm:h-[20rem] h-[15rem] md:h-[33rem]`}
+  ${tw`relative items-center w-[30% ]flex justify-center sm:h-[20rem] h-[15rem] md:h-[33rem]`}
 `
 
 export const Hero: React.FC = () => {
@@ -80,7 +80,7 @@ export const Hero: React.FC = () => {
                   height={isDesktop ? 250 : 0}
                   layout={isDesktop ? 'fixed' : 'fixed'}
                   unoptimized={true}
-                  tw="object-cover"
+                  tw="object-cover w-full"
                 />
               </ContentImage>
               <ContentText>

@@ -11,7 +11,7 @@ import 'aos/dist/aos.css'
 
 const Background = styled.div`
   ${tw`w-full`}
-  background: #1D313E
+  background: #232323
 `
 
 const Content = styled.div`
