@@ -47,7 +47,13 @@ export const OurAttorneysMalvis: React.FC = () => {
           <Container>
             <Content>
               <ContentHead>Our Attorneys</ContentHead>
-              <Button text="Contact Us" variant="malvis" tw="font-semibold mt-6 rounded-full px-6" external={true} url="#" />
+              <Button
+                text="Contact Us"
+                variant="malvisdark"
+                tw="font-semibold mt-6 rounded-full px-6"
+                external={true}
+                url="#"
+              />
               <Image
                 unoptimized={true}
                 src={'/assets/images/ourteam1 (2).png'}
