@@ -1,9 +1,10 @@
 import Button from '@/components/Buttons'
 import { Container } from '@/components/Layouts'
 import { Navbar } from '@/components/Navbar'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Element, Link } from 'react-scroll'
 import tw, { styled } from 'twin.macro'
+import Image from 'next/image'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -17,7 +18,7 @@ const ContentText = styled.div`
   ${tw`px-5 md:px-5 md:w-5/6 lg:w-[40%] lg:px-0 md:pb-[2.25rem]`}
 `
 const ContentTextHead = styled.p`
-  ${tw`pt-16 md:pt-32 lg:pt-0 md:-my-16 text-[#d9d9d9]`}
+  ${tw`pt-16 md:pt-32 lg:pt-0 text-[#d9d9d9]`}
 `
 const ContentTextSub = styled.p`
   ${tw`text-left text-gray-300 md:text-justify lg:text-base`}
@@ -27,10 +28,35 @@ const ContentImage = styled.div`
 `
 
 export const Hero: React.FC = () => {
+  const [isDesktop, setIsDesktop] = useState(false)
   useEffect(() => {
     AOS.init({
       duration: 3000
     })
+  }, [])
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024) {
+        setIsDesktop(true)
+      } else {
+        setIsDesktop(false)
+      }
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024) {
+        setIsDesktop(true)
+      } else {
+        setIsDesktop(false)
+      }
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
   }, [])
   return (
     <>
@@ -39,7 +65,7 @@ export const Hero: React.FC = () => {
         <Background>
           <Container tag={'div'} tw="px-0 py-10 sm:py-0">
             <Content>
-              <ContentImage>
+              <ContentImage data-aos="fade">
                 {/* <Image
                   src={'/assets/icons/malvis-logo.svg'}
                   className={'rounded-full'}
@@ -47,19 +73,19 @@ export const Hero: React.FC = () => {
                   height={390}
                   layout={'fixed'}
                 /> */}
-                {/* <Image
+                <Image
                   src={isDesktop ? '/assets/icons/malvis-logo.svg' : '/assets/images/malvis-logo.svg'}
-                  className={isDesktop ? 'rounded-full' : ''}
-                  width={isDesktop ? 390 : 0}
-                  height={isDesktop ? 390 : 0}
+                  className={isDesktop ? 'rounded-full' : 'rounded-full'}
+                  width={isDesktop ? 250 : 0}
+                  height={isDesktop ? 250 : 0}
                   layout={isDesktop ? 'fixed' : 'fixed'}
                   unoptimized={true}
                   tw="object-cover"
-                /> */}
+                />
               </ContentImage>
               <ContentText>
                 <ContentTextHead data-aos="fade" className="malvis title1">
-                  Malvis
+                  MALVIS
                 </ContentTextHead>
                 <ContentTextSub className="desc">
                   Malvis Attorneys at Law Law Office is a law firm which promises to deliver domestic and international

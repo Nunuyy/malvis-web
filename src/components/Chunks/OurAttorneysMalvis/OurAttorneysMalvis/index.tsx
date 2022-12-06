@@ -46,24 +46,16 @@ export const OurAttorneysMalvis: React.FC = () => {
         <Background>
           <Container>
             <Content>
-              <ContentHead data-aos="fade-right">Our Attorneys</ContentHead>
-              <Button
-                text="Contact Us"
-                variant="malvis"
-                tw="font-semibold mt-6 rounded-full px-6"
-                external={true}
-                url="#"
-                data-aos="flip-down"
-              />
+              <ContentHead>Our Attorneys</ContentHead>
+              <Button text="Contact Us" variant="malvis" tw="font-semibold mt-6 rounded-full px-6" external={true} url="#" />
               <Image
                 unoptimized={true}
-                src={'/assets/images/ourteam.png'}
+                src={'/assets/images/ourteam1 (2).png'}
                 layout="fixed"
-                width={isDesktop ? 1140 : 350}
+                width={isDesktop ? 1140 : 360}
                 height={isDesktop ? 340 : 300}
                 objectFit="contain"
                 className="translate-y-8"
-                data-aos="fade-left"
               />
             </Content>
           </Container>

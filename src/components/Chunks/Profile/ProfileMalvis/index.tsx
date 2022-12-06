@@ -61,8 +61,9 @@ export const ProfileMalvis: React.FC = () => {
     <>
       <Element name="profile" className="bg-white element">
         <Content>
-          <div tw="w-3/5 hidden md:block" data-aos="fade-right">
+          <div tw="w-3/5 hidden md:block" data-aos="fade">
             <ContentHead>PROFILE</ContentHead>
+            <p tw="text-[#2b2b2b] font-bold mb-5 text-center">Reza Satria Kinayungan.S.H, CTL.</p>
             <p tw="text-justify px-16 text-dark">
               Reza graduated from Gajdah Mada University started the experience of working at the Tony Hasibuan & Partners
               for 5 years and became a Associate, he is founding a platform advokat_keluarga . The Platform has free services
@@ -81,7 +82,6 @@ export const ProfileMalvis: React.FC = () => {
               width={isDesktop ? 440 : 400}
               height={isDesktop ? 500 : 400}
               objectFit="contain"
-              className="translate-x-4"
             />
           </div>
           <div tw="bg-[#d9d9d9] md:hidden block bg-no-repeat bg-cover bg-center " data-aos="fade">
@@ -92,11 +92,11 @@ export const ProfileMalvis: React.FC = () => {
               width={isDesktop ? 540 : 300}
               height={isDesktop ? 510 : 400}
               objectFit="contain"
-              className="translate-y-4"
             />
           </div>
           <div tw="md:hidden block" data-aos="fade">
             <ContentHead>PROFILE</ContentHead>
+            <p tw="text-[#2b2b2b] font-bold mb-5 text-center">Reza Satria Kinayungan.S.H, CTL.</p>
             <p tw="text-justify px-5 text-dark pb-20">
               Reza graduated from Gajdah Mada University started the experience of working at the Tony Hasibuan & Partners
               for 5 years and became a Associate, he is founding a platform advokat_keluarga . The Platform has free services

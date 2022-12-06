@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
 /* Write your own custom base styles here */
 /* Start purging... */
@@ -26,16 +27,16 @@ body {
   border-radius: 20px;
 }
 .malvis {
-  font-family: 'Comforter Brush', cursive;
+  font-family: 'Merriweather', serif;
 }
 .nav-title {
-  font-size: 40px;
+  font-size: 2rem;
 }
 .title {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .title1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .desc {
   font-family: 'Quicksand', sans-serif;
@@ -67,19 +68,19 @@ body {
 @media only screen and (min-width: 600px) {
   /* For desktop: */
   .title {
-    font-size: 7rem;
+    font-size: 4rem;
   }
   .title1 {
-    font-size: 12rem;
+    font-size: 9rem;
   }
 }
 @media only screen and (min-width: 769px) {
   /* For desktop: */
   .title {
-    font-size: 8rem;
+    font-size: 5rem;
   }
   .title1 {
-    font-size: 12rem;
+    font-size: 6rem;
   }
 }
 

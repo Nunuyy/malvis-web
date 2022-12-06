@@ -73,7 +73,7 @@ export const Ccmalvis: React.FC = () => {
         <Container tag={'div'} tw="px-0 pt-5 sm:pt-0 sm:p-5 md:px-14">
           <Content>
             <ContentRight>
-              <ContentRightLeft data-aos="flip-left">
+              <ContentRightLeft data-aos="fade">
                 <ContentRightHead>Corporate & Commercial</ContentRightHead>
                 <ContentRightSub>
                   We offer a wide range of corporate and commercial legal services, which comprise of, but not limited to:
@@ -106,7 +106,7 @@ export const Ccmalvis: React.FC = () => {
                   </Ul>
                 </ContentRightSub>
               </ContentRightLeft>
-              <ContentRightRight data-aos="flip-down">
+              <ContentRightRight data-aos="fade">
                 <ContentRightHead>We also advise on:</ContentRightHead>
                 <ContentRightSub>
                   <Ul>
@@ -120,15 +120,12 @@ export const Ccmalvis: React.FC = () => {
                       <li>
                         <span tw="text-gray-500">Foreign direct or indirect investments; and</span>
                       </li>
-                      <li>
-                        <span tw="text-gray-500">Laravel untuk framework berbasis PHP</span>
-                      </li>
                     </div>
                     Compliance and regulatory matters.
                   </Ul>
                 </ContentRightSub>
               </ContentRightRight>
-              <ContentRightLeft data-aos="flip-right">
+              <ContentRightLeft data-aos="fade">
                 <ContentRightHead>Energy and Oil & Gas</ContentRightHead>
                 <ContentRightSub>
                   We help private and public sector in the oil, gas and renewable energy industry achieve efficient and
@@ -149,7 +146,7 @@ export const Ccmalvis: React.FC = () => {
                       <span tw="text-gray-500">Tax Due Dilligence </span>
                     </li>
                     <li>
-                      <span tw="text-gray-500">Tax Due Dilligence </span>
+                      <span tw="text-gray-500">Tax Reconciliation </span>
                     </li>
                   </Ul>
                 </ContentRightSub>

@@ -42,7 +42,7 @@ export const Desc: React.FC = () => {
                 The government's reconciliation can be widely large and strong sanctions for inaccurate tax reporting we are
                 experienced in the tax process from the process of corrections, appeal, tax-fed lawsuit, and Indonesian
                 national police handling in tax crimes. Therefore, managing the risk of your tax exposure is very important,
-                either in terms of you are looking for peace of mind for your own company or before buying. This risk can be
+                either in terms of you are looking for peace of mind for your own company or before buying . This risk can be
                 managed by reviewing your financial statements, accounting records and your tax reports to ensure any tax
                 inaccuracies or exposure can be identified and actions taken at the right time.
               </Contentsub>

@@ -41,7 +41,7 @@ export const AboutMalvis: React.FC = () => {
                 <ContentHead data-aos="fade-up">ABOUT US</ContentHead>
                 <p tw="text-[#232323] md:mb-5 md:text-center text-justify text-sm mb-20" data-aos="fade-down">
                   Local Counsel, Globally Connected Malvis Attorneys at Law Law Office founded in 2022 with a wide range of
-                  its Founding Partners experiences, which are &nbsp;
+                  its Founding Partners experiences, which are
                   <b>Zubet Rizal.S.H., Reza Satria Kinayungan.S.H, CTL., Gading Yonggar Ditya.S.H.</b> Supported with strong
                   analitycal of Lawyers, Paralegal, as well as Field Administration Staff who will be incharged as a solid
                   team to provide many legal consultation to give the best service for valuable clients.

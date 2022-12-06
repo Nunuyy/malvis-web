@@ -38,14 +38,14 @@ export const Navbar: FC<LinkProps> = ({ withScrolled = true }) => {
         className={`fixed top-0 z-30 w-full ${
           withScrolled
             ? scrolled
-              ? 'bg-white backdrop-filter backdrop-blur-lg text-malvis bg-opacity-30 py-3 lg:py-0 shadow-md transition-all duration-700'
+              ? 'bg-white backdrop-filter backdrop-blur-lg text-malvis bg-opacity-80 py-3 lg:py-0 shadow-md transition-all duration-700'
               : 'transition-all duration-500 py-5 lg:py-2 text-white'
-            : 'bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 py-3 lg:py-2 shadow-md transition-all duration-700'
+            : 'bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 py-3 lg:py-2 shadow-md transition-all duration-700'
         }`}>
         <Container tag="nav" tw="flex items-center justify-between">
           <div tw="relative w-[155px] h-auto justify-start p-5 cursor-pointer hidden md:flex">
             <h1 onClick={() => router?.push('/')} className="malvis nav-title">
-              Malvis
+              MALVIS
             </h1>
           </div>
           <div tw="relative w-[155px] h-auto justify-start cursor-pointer md:hidden flex">

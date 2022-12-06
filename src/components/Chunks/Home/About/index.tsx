@@ -36,7 +36,7 @@ export const About: React.FC = () => {
               notable transactions in Indonesia, gained from having worked at some of the largest and renowned law firms. Our
               practices areas covering Litigation and Corporate services which covering on all litigation fields (Criminal,
               Private, Tax), Manpower & Industrial Relations (Company Regulation, Working Agreement, Union, Termination),
-              Family law (inheritance, Divorce, pre-nuptial agreement, etc ) Corporate Commercial & Foreign Investment
+              Family law (inheritance, Divorce, pre-nuptial agreement, etc.) Corporate Commercial & Foreign Investment
               (Establishment, Restructuring, M&A, Liquidation), Business Transaction (Cooperation Agreement, Debt.
               Collection, Bakcruptcy, Private Investigator), and also Supporting Service (Translation, Interpretation, and
               Business Matching).

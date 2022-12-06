@@ -38,7 +38,7 @@ const _APP = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <title>MALVIS — Human & Legal</title>
+        <title>MALVIS — Attorneys at Law</title>
         <link rel="icon" type="image/ico" href="/assets/icons/malvis-logo.svg"></link>
         <meta name="robots" content="index, follow" />
       </Head>

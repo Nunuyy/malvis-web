@@ -1,10 +1,10 @@
-import { HeroMalvis, AboutMalvis } from '@/components/Chunks/About'
+import { HeroMalvis, GalleryMalvis } from '@/components/Chunks/About'
 import { Footerv2 } from '@/components/Footerv2'
 const About = () => {
   return (
     <>
       <HeroMalvis open={false} />
-      <AboutMalvis />
+      <GalleryMalvis />
       <Footerv2 open={false} />
     </>
   )

@@ -19,7 +19,7 @@ const ContentText = styled.div`
   ${tw`px-5 md:px-5 md:w-5/6 lg:w-[56%]  lg:px-0 md:pb-[2.25rem]`}
 `
 const ContentTextHead = styled.p`
-  ${tw`h-auto pt-16  md:pt-32  md:-my-16 lg:pb-8 lg:pt-0 text-[#d9d9d9]`}
+  ${tw`h-auto pt-16  md:pt-32  lg:pb-8 lg:pt-0 text-[#d9d9d9]`}
 `
 const Desc = styled.p`
   ${tw`text-2xl font-semibold text-malvis`}

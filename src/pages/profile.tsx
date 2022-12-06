@@ -1,4 +1,4 @@
-import { HeroMalvis, ProfileMalvis } from '@/components/Chunks/Profile'
+import { HeroMalvis, ProfileMalvis, ProfileMalvis1, ProfileMalvis2 } from '@/components/Chunks/Profile'
 import { Footerv2 } from '@/components/Footerv2'
 
 const Profile = () => {
@@ -6,6 +6,8 @@ const Profile = () => {
     <>
       <HeroMalvis open={false} />
       <ProfileMalvis />
+      <ProfileMalvis1 />
+      <ProfileMalvis2 />
       <Footerv2 open={false} />
     </>
   )

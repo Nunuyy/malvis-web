@@ -12,7 +12,7 @@ import 'aos/dist/aos.css'
 // import GalleryCard from '@/components/Card/Gallery'
 
 const WrapperSlider = styled.div`
-  ${tw`flex items-center place-content-center`}
+  ${tw`flex items-center place-content-center w-full gap-0`}
   .slick-slider {
     overflow: hidden;
   }
@@ -47,7 +47,7 @@ export const GalleryMalvis: React.FC = () => {
     <Container tag={'div'} tw="grid grid-cols-1  md:grid-cols-3 grid-rows-1">
       <Fragment>
         <div>
-          <WrapperSlider data-aos="fade-up">
+          <WrapperSlider data-aos="fade">
             <Slider {...setting}>
               {/* ref={sliderRef} */}
               {[...Array(1)].map(() => (
@@ -60,7 +60,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={300}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                   <div>
@@ -71,7 +71,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={300}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                 </div>
@@ -86,7 +86,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={300}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                   <div>
@@ -97,7 +97,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={300}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                 </div>
@@ -112,7 +112,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={300}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                   <div>
@@ -123,7 +123,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={300}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                 </div>
@@ -138,7 +138,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={300}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                   <div>
@@ -149,7 +149,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={300}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                 </div>
@@ -164,7 +164,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={300}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                   <div>
@@ -175,7 +175,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={300}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                 </div>
@@ -220,7 +220,7 @@ export const GalleryMalvis: React.FC = () => {
       </Fragment>
       <Fragment>
         <div>
-          <WrapperSlider data-aos="fade-down">
+          <WrapperSlider data-aos="fade">
             <Slider {...setting}>
               {/* ref={sliderRef} */}
               {[...Array(1)].map(() => (
@@ -233,7 +233,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={198}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                   <div>
@@ -244,7 +244,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={198}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                   <div>
@@ -255,7 +255,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={198}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                 </div>
@@ -270,7 +270,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={198}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                   <div>
@@ -281,7 +281,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={198}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                   <div>
@@ -292,7 +292,7 @@ export const GalleryMalvis: React.FC = () => {
                       width={200}
                       height={198}
                       objectFit="contain"
-                      className=""
+                      className="bg-[#d9d9d9]"
                     />
                   </div>
                 </div>
